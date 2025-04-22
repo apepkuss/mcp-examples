@@ -492,6 +492,7 @@ name = "gaia-calculator-mcp-server"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "clap",
  "futures",
  "hyper",
  "hyper-util",

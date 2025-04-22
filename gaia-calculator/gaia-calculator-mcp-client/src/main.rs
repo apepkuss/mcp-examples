@@ -66,7 +66,7 @@ async fn main() -> anyhow::Result<()> {
             tracing::info!("Connecting to MCP server via stdio");
 
             let transport = TokioChildProcess::new(&mut Command::new(
-                "./target/release/gaia-calculator-mcp-server-stdio",
+                "./target/release/gaia-calculator-mcp-server",
             ))?;
 
             let service = ().serve(transport).await?;

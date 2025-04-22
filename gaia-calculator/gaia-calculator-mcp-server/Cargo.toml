@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-rmcp               = { workspace = true, features = ["server", "macros"] }
+rmcp               = { workspace = true, features = ["server", "macros", "transport-io"] }
 tokio              = { workspace = true, features = ["macros", "rt", "rt-multi-thread", "io-std", "net", "fs", "time"] }
 serde              = { workspace = true, features = ["derive"] }
 serde_json         = { workspace = true }
@@ -19,3 +19,4 @@ hyper-util         = { workspace = true, features = ["tokio"] }
 tokio-tungstenite  = { workspace = true }
 reqwest            = { workspace = true }
 pin-project-lite   = { workspace = true }
+clap               = { workspace = true, features = ["cargo", "derive"] }
